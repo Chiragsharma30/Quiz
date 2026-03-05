@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz</h1>
+
+    <!-- Question 1 -->
+    <div class="question-container" id="q1">
+      <div class="question">Q1: What is the capital of France?</div>
+      <ul class="options">
+        <li class="option">Paris</li>
+        <li class="option">London</li>
+        <li class="option">Berlin</li>
+        <li class="option">Madrid</li>
+      </ul>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-container hidden" id="q2">
+      <div class="question">Q2: Which language runs in a browser?</div>
+      <ul class="options">
+        <li class="option">Java</li>
+        <li class="option">C</li>
+        <li class="option">Python</li>
+        <li class="option">JavaScript</li>
+      </ul>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-container hidden" id="q3">
+      <div class="question">Q3: What does CSS stand for?</div>
+      <ul class="options">
+        <li class="option">Central Style Sheets</li>
+        <li class="option">Cascading Style Sheets</li>
+        <li class="option">Computer Style Sheets</li>
+        <li class="option">Creative Style Sheets</li>
+      </ul>
+    </div>
+
+    <!-- Navigation buttons -->
+    <button id="next-btn">Next</button>
+
+    <!-- Result -->
+    <div id="result" class="hidden">
+      <h2>Quiz Completed!</h2>
+      <p>Your Score: <span id="score"></span></p>
+      <button id="restart-btn">Restart Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
